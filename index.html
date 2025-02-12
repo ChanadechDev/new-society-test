@@ -12,17 +12,20 @@
             padding: 20px;
             background-color: #f5f5f5;
         }
-        h1 {
+        h1, h2 {
             color: #2c3e50;
-            text-align: center;
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
         }
-        .features {
+        h1 {
+            text-align: center;
+        }
+        .features, .about, .mission, .get-involved, .contact {
             background-color: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px 0;
         }
         ul {
             list-style-type: none;
@@ -35,18 +38,59 @@
         li:last-child {
             border-bottom: none;
         }
+        .contact-info {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 10px;
+        }
+        .contact-info strong {
+            color: #2c3e50;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to Our New Society</h1>
-    <p>This is a simple page to demonstrate our vision for a better future.</p>
+    
+    <div class="about">
+        <h2>About Us</h2>
+        <p>We are a forward-thinking organization dedicated to creating positive change in our community. Our approach combines innovative thinking with practical solutions to address today's challenges.</p>
+    </div>
+
+    <div class="mission">
+        <h2>Our Mission</h2>
+        <p>To foster a collaborative environment where ideas flourish and sustainable solutions are developed for the benefit of all members of society.</p>
+    </div>
+
     <div class="features">
         <h2>Our Core Values:</h2>
         <ul>
-            <li>Innovation</li>
-            <li>Collaboration</li>
-            <li>Sustainability</li>
+            <li>Innovation - Embracing new ideas and creative solutions</li>
+            <li>Collaboration - Working together for better outcomes</li>
+            <li>Sustainability - Ensuring long-term positive impact</li>
         </ul>
+    </div>
+
+    <div class="get-involved">
+        <h2>Get Involved</h2>
+        <p>There are many ways to participate in our initiative:</p>
+        <ul>
+            <li>Join our monthly meetings</li>
+            <li>Volunteer for community projects</li>
+            <li>Share your ideas and expertise</li>
+            <li>Support our initiatives</li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <strong>Email:</strong>
+            <span>contact@newsociety.org</span>
+            <strong>Phone:</strong>
+            <span>(555) 123-4567</span>
+            <strong>Address:</strong>
+            <span>123 Innovation Street, Future City, FC 12345</span>
+        </div>
     </div>
 </body>
 </html>
